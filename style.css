@@ -22,12 +22,14 @@ body{
 .page{
   display: flex;
   flex-direction: column;
+  justify-content: center;
  margin:50px 0 0 8%;
 }
 header{
+  display: flex;
+  flex-wrap: wrap;
   font-size: 4vw;
 	margin-top: 10px;
-  z-index: 9999!important;
   padding-bottom: 10%;
 }
 
@@ -72,12 +74,18 @@ Canvas{
 @media screen and (max-width:1024px)and (min-width:200px){
 
   body{
-    margin: 0 auto;
+    margin:auto;
     overflow-x: hidden;
+  }
+  .page{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:50px 0 0 0!important;
   }
 
   h1{
-    font-size: 8vh;
+    font-size: 13vw;
     text-align: center;
     padding-bottom: 5%;
   }
